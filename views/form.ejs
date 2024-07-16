@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mini Message | <%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <form method="post" action="/new">
+      <label for="username">
+        Username
+        <input type="text" name="username" />
+      </label>
+      <label for="message">
+        Message
+        <input type="text" name="message" />
+      </label>
+      <button type="submit">send</button>
+    </form>
+  </body>
+</html>
